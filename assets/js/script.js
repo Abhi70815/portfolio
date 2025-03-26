@@ -39,7 +39,9 @@ $(document).ready(function () {
 
     // <!-- emailjs to mail contact form data -->
     $("#contact-form").submit(function (event) {
-        emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
+        emailjs.init("aax-2LP7fYC3d_CrS");
+
+
 
         emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
             .then(function (response) {
@@ -59,7 +61,7 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Jigar Sable";
+            document.title = "Portfolio | Abhshek Chaurasia";
             $("#favicon").attr("href", "assets/images/favicon.png");
         }
         else {
